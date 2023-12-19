@@ -1,54 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Animal Facts</title>
-</head>
-<style>
-    body,html{
-        height: 100%;
-        font-family: sans-serif;
-        font-style: italic;
-        font: bold;
-    }
-.bg{
-    background-image: url("https://image.slidesdocs.com/responsive-images/background/cartoon-cute-animals-and-plants-powerpoint-background_bc520f51c6__960_540.jpg");
-    height: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;   
-    margin: auto;
-    padding: 10px;
-}
-p{
-    color: blue;
-}
-option{
-    font-style: italic;
-}
-select{
-    height: 50%; 
-    width: 25%; 
-    border-color: black;
-    border-style:  bold;
-}
 
-</style>
-<script src="script.js"></script>
-<script src="https://kit.fontawesome.com/b5296b35e3.js" crossorigin="anonymous"></script>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Emoji API</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link href="style.css" rel="stylesheet">
+
+</head>
+
 <body>
-    <div class="bg">  
-        <h1 style="text-align: center;color: blue;font-style:italic;"><i class="fa-solid fa-cloud-sun fa-2xl" style="color: #ffe642;"></i><b>Animal Facts</b></h1>   
-    <div style="text-align: center; vertical-align: middle;align-content: center;margin-top: 300px;">
-    <label for="animal"><b>Choose animal</b></label>
-    <select id="animal" name="animal" onchange="loadTemperature()">   
-        <option>Dog</option> 
-        <option>Cat</option> 
-        <option>Horse</option> 
-    </select>
-    <p id="animalfactdisplay"></p>
-</div>
-</div>
+  <h1 class="container">Emoji API</h1>
+  <p class="container">We are going to retrieve data from emojiHub API and then display that data as a table in this
+    webpage</p>
+  <table class="table" id="emojiList">
+    <tr>
+      <th>Name</th>
+      <th>Category</th>
+      <th>Group</th>
+      <th>htmlCode</th>
+      <th>unicode</th>
+    </tr>
+    <tr>
+      <td>woman</td>
+      <td>smileys and people</td>
+      <td>person</td>
+      <td>&#128105 &#127998</td>
+      <td>U+1F469 U+1F3FE</td>
+    </tr>
+    <tr>
+      <td>octopus</td>
+      <td>animal and nature</td>
+      <td>animal marine</td>
+      <td>&#128025</td>
+      <td>U+1F419</td>
+    </tr>
+    <tr>
+      <td>videocassette</td>
+      <td>objects</td>
+      <td>objects</td>
+      <td>&#128252</td>
+      <td>U+1F4FC</td>
+    </tr>
+    <tr>
+      <td>kimono</td>
+      <td>smileys and people</td>
+      <td>clothing</td>
+      <td>&#128088</td>
+      <td>U+1F458</td>
+    </tr>
+    <tr>
+      <td>inbox tra</td>
+      <td>objects</td>
+      <td>objects</td>
+      <td>&#128229</td>
+      <td>U+1F4E5</td>
+    </tr>
+  </table>
+  <script src="script.js">
+
+  </script>
+
 </body>
+
 </html>
